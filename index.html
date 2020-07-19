@@ -14,14 +14,18 @@
 			<h1>--</h1>
 		</div>
 		<div class="btns">
-			<button style="height: 15px" class="start">START</button>
-			<button style="height: 15px" class="stop">STOP</button>
+			<div class="start"><img src="play.png" alt="Play"></div>
+			<div id="speedContainer">
+				<label>Interval</label>
+				<br>
+				<input type="number" min="400" max="2000" placeholder="1000ms">
+			</div>
+			<div class="stop"><img src="stop.png" alt="Stop"></div>
 		</div>
 	</main>
 	<script src="./speech.js"></script>
 	<script src="./funciones.js"></script>
 	<script src="./app.js"></script>
-	<!-- <script src="./main.js"></script> -->
 </body>
 
 </html>

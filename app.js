@@ -1,8 +1,11 @@
 const Colores = ["red", "green", "blue", "yellow", "black"];
-const Palabras = ["ROJO", "VERDE", "AZUL", "AMARILLO", "NEGRO", "BLANCO", "LIBRE", "SUELTO", "AQUI", "AHORA", "SOY"];
+const Palabras = [,];
+Palabras[0] = ["ROJO", "VERDE", "AZUL", "AMARILLO", "NEGRO", "BLANCO"];
+Palabras[1] = ["LIBRE", "SUELTO", "AQUI", "AHORA", "SOY"];
 const PalabrasSalidas = [];
 const snd = new Audio("./metronomo.mp3");
-let milisegundos = 600;
+let milisegundos = 1000;
+const speedContainer = document.querySelector("#speedContainer");
 
 let timer;
 let inicio = false;

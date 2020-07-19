@@ -1,18 +1,27 @@
 .appMain {
-	width: 90vw;
-	height: 90vh;
 	background-color: black;
 	margin: auto;
-	border: 2px solid black;
+	border: 5px solid black;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-
+	justify-content: space-between;
 }
 
 #contLetras {
-	border: 3px solid black;
 	background-color: white;
+}
+
+
+#speedContainer {
+	margin: auto 0;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+#speedContainer input {
+	border: 5px solid black;
+	margin-top: 1em;
+	text-align: center;
 }
 
 h1 {
@@ -22,30 +31,36 @@ h1 {
 	color: black;
 }
 
+@media (max-width: 1200px) {
+	h1 {font-size: 7em;}
+}
+
+@media (max-width: 700px) {
+	h1 {font-size: 5em;}
+}
+
 .red { color: red; }
 .green { color: green; }
 .blue { color: blue; }
 .yellow { color: #ffe500; }
 .black { color: black; }
 
-label {
-	color: white;
+.hidden {
+	visibility: hidden;
 }
 
-button {
-	font-weight: bold;
-	font-size: 2em;
-	line-height: 3;
-	margin: 2em;
+.start, .stop {
+	margin: 1em;
 }
 
 .btns {
 	display: flex;
-	flex-direction: column;
-	border: 2px solid red;
+	background-color: white;
+	justify-content: space-around;
+
 }
-#param {
-	display: flex;
-	flex-direction: column;
-	border: 2px solid red;
+
+img {width: 10vw;
+	border: 3px solid black;
+	border-radius: 50%;
 }
