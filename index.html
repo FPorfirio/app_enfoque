@@ -10,22 +10,23 @@
 
 <body>
 	<main class="appMain">
-		<div id="contLetras">
-			<h1>--</h1>
-		</div>
-		<div class="btns">
-			<div class="start"><img src="play.png" alt="Play"></div>
-			<div id="speedContainer">
-				<label>Interval</label>
-				<br>
-				<input type="number" min="400" max="2000" placeholder="1000ms">
+		<div id="contenedor">
+			<div id="contLetras">
+				<h1>--</h1>
 			</div>
-			<div class="stop"><img src="stop.png" alt="Stop"></div>
+			<div class="btns">
+				<div class="start"><img src="play.png" alt="Play"></div>
+				<div id="speedContainer">
+					<label>Interval</label>
+					<br>
+					<input type="number" min="400" max="2000" placeholder="1000ms">
+				</div>
+				<div class="stop"><img src="stop.png" alt="Stop"></div>
+			</div>
 		</div>
 	</main>
-	<script src="./speech.js"></script>
-	<script src="./funciones.js"></script>
-	<script src="./app.js"></script>
+
+	<script type="module" src="./app.js"></script>
 </body>
 
 </html>
